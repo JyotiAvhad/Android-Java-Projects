@@ -1,2 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources></resources>
+<resources>
+
+    <style name="FullscreenTheme" parent="AppTheme">
+        <!--Handle cutout mode here-->
+        <item name="android:windowLayoutInDisplayCutoutMode">
+            never
+        </item>
+    </style>
+
+</resources>
