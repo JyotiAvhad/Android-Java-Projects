@@ -10,6 +10,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:scaleType="centerCrop"
+        android:layout_marginTop="0dp"
         android:src="@drawable/foodies_login" />
 
     <!--    <RelativeLayout-->
@@ -70,7 +71,8 @@
                 app:passwordToggleTint="@color/colorLightGray">
 
                 <EditText
-                    android:id="@+id/et_username"
+                    android:focusableInTouchMode="true"
+                    android:id="@+id/et_mobileNum"
                     android:gravity="center"
                     android:textSize="15dp"
                     android:layout_width="match_parent"
@@ -229,6 +231,18 @@
                 android:src="@drawable/google"
                 android:layout_width="217dp"
                 android:layout_height="@dimen/dimen_40dp"/>
+
+            <TextView
+                android:drawableLeft="@drawable/facebook_icon"
+                android:gravity="center"
+                android:textColor="@color/colorWhite"
+                android:text="Sign in with Facebook"
+                android:layout_width="match_parent"
+                android:layout_height="38dp"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:layout_marginTop="@dimen/dimen_20dp"
+                android:background="#3F51B5"/>
 
         </LinearLayout>
 
