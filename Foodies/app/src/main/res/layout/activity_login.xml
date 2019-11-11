@@ -222,12 +222,14 @@
 <!--                android:textStyle="bold" />-->
 
             <ImageView
+                android:id="@+id/imgView_Fb"
                 android:layout_marginTop="20dp"
                 android:src="@drawable/facebook"
                 android:layout_width="300dp"
                 android:layout_height="@dimen/dimen_40dp"/>
 
             <ImageView
+                android:id="@+id/imgView_google"
                 android:layout_marginTop="@dimen/dimen_20dp"
                 android:src="@drawable/google"
                 android:layout_width="217dp"
