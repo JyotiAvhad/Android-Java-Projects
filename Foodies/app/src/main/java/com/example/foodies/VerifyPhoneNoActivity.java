@@ -1,9 +1,11 @@
 package com.example.foodies;
 
+import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+import android.view.inputmethod.InputMethodManager;
 import android.widget.EditText;
 import android.widget.Toast;
 
@@ -35,7 +37,7 @@ public class VerifyPhoneNoActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_verify_phone_number);
 
-        Log.d(TAG, "onCreate: insideeeee");
+        Log.d(TAG, "onCreate: start activity");
 
         firebaseAuth = FirebaseAuth.getInstance();
         et_verifyOTP = findViewById(R.id.et_otp);
@@ -57,6 +59,8 @@ public class VerifyPhoneNoActivity extends AppCompatActivity {
                 }
                 //verifying the code entered manually
                 verifyVerificationCode(code);
+
+                Log.d(TAG, "onClick: "+code);
             }
         });
 
@@ -67,12 +71,16 @@ public class VerifyPhoneNoActivity extends AppCompatActivity {
         //creating the credential
         PhoneAuthCredential credential = PhoneAuthProvider.getCredential(verificationId, code);
 
+        Log.d(TAG, "verifyVerificationCode: "+credential);
+
         //signing the user
         signInWithPhoneCredential(credential);
 
     }
 
     private void signInWithPhoneCredential(PhoneAuthCredential credential) {
+
+        Log.d(TAG, "signInWithPhoneCredential: ");
 
         firebaseAuth.signInWithCredential(credential)
                 .addOnCompleteListener(VerifyPhoneNoActivity.this, new OnCompleteListener<AuthResult>() {
@@ -105,6 +113,8 @@ public class VerifyPhoneNoActivity extends AppCompatActivity {
      */
     private void sendVerificationCode(String mobile) {
 
+        Log.d(TAG, "sendVerificationCode: "+mobile);
+
         PhoneAuthProvider.getInstance().verifyPhoneNumber(
                 "+91" + mobile,
                 60,
@@ -122,6 +132,8 @@ public class VerifyPhoneNoActivity extends AppCompatActivity {
 
             //Getting the code sent by SMS
             String code = phoneAuthCredential.getSmsCode();
+
+            Log.d(TAG, "onVerificationCompleted: "+code);
 
             //sometime the code is not detected automatically
             //in this case the code will be null
@@ -148,4 +160,10 @@ public class VerifyPhoneNoActivity extends AppCompatActivity {
         }
     };
 
+    public void hideKeyboard(View view) {
+
+        InputMethodManager inputMethodManager = (InputMethodManager) getSystemService(Activity.INPUT_METHOD_SERVICE);
+        inputMethodManager.hideSoftInputFromWindow(view.getWindowToken(),0);
+
+    }
 }
