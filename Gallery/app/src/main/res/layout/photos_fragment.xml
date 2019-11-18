@@ -3,12 +3,17 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
-        android:textSize="25sp"
-        android:text="Albums"/>
+    <GridView
+        android:layout_marginTop="5dp"
+        android:numColumns="3"
+        android:columnWidth="90dp"
+        android:horizontalSpacing="5dp"
+        android:verticalSpacing="5dp"
+        android:gravity="center"
+        android:id="@+id/grid_view"
+        android:stretchMode="columnWidth"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
 
 
 </RelativeLayout>
