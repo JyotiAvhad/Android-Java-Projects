@@ -1,4 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/collage"
+        android:title="Collage" />
+    <item
+        android:id="@+id/trash"
+        android:title="Trash Bin" />
+    <item
+        android:icon="@mipmap/ic_setting"
+        android:id="@+id/settings"
+        android:title="Settings" />
 
 </menu>
