@@ -1,6 +1,7 @@
 package com.example.gallery;
 
 import android.content.Context;
+import android.util.Log;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
@@ -11,6 +12,8 @@ import android.widget.ImageView;
 import java.util.List;
 
 public class ImageAdapter extends BaseAdapter {
+
+    private static final String TAG = "ImageAdapter";
 
     private List<Integer> mList;
     private Context mContext;
@@ -38,6 +41,8 @@ public class ImageAdapter extends BaseAdapter {
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
         ImageView imageView = (ImageView) convertView;
+
+        Log.d(TAG, "getView: ");
 
         if(imageView == null){
             imageView = new ImageView(mContext);

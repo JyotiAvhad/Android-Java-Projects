@@ -67,9 +67,14 @@ public class MainActivity extends AppCompatActivity {
         gridView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+
                 int item_pos = imageList.get(position);
 
-                ShowDialogBox(item_pos);
+                Intent intent=new Intent(MainActivity.this,FullScreenViewActivity.class);
+                intent.putExtra("img",item_pos);
+                startActivity(intent);
+
+//                ShowDialogBox(item_pos);
             }
         });
 
@@ -87,9 +92,10 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void ShowDialogBox(final int item_pos) {
+
         final Dialog dialog = new Dialog(this);
 
-        dialog.setContentView(R.layout.custom_dialog);
+       dialog.setContentView(R.layout.custom_dialog);
 
         //Getting custom dialog views
         TextView Image_name = dialog.findViewById(R.id.txt_Image_name);
