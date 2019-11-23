@@ -12,9 +12,6 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
 
-        <activity android:name=".GoogleLoginActtivity"
-            android:screenOrientation="portrait"/>
-
         <activity android:name=".VerifyPhoneNoActivity"
             android:screenOrientation="portrait"/>
 
@@ -34,5 +31,13 @@
             </intent-filter>
         </activity>
     </application>
+
+<!--    //to support different screen size in android-->
+
+<!--    <supports-screens android:smallScreens="true"-->
+<!--        android:normalScreens="true"-->
+<!--        android:largeScreens="true"-->
+<!--        android:xlargeScreens="true"-->
+<!--        android:anyDensity="true" />-->
 
 </manifest>

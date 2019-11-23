@@ -5,27 +5,31 @@ import android.os.Bundle;
 import android.view.View;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.viewpager.widget.ViewPager;
 
+import com.google.android.material.tabs.TabLayout;
 
 public class DashboardActivity extends AppCompatActivity {
+
+    TabAdapter adapter;
+    TabLayout tabLayout;
+    ViewPager viewPager;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_dashboard);
 
-//        findViewById(R.id.btn_logout).setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//
-//                FirebaseAuth.getInstance().signOut();
-//
-//                Intent intent = new Intent(DashboardActivity.this, LoginActivity.class);
-//                intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
-//
-//                startActivity(intent);
-//            }
-//        });
+        viewPager = (ViewPager) findViewById(R.id.viewPager);
+        tabLayout = (TabLayout) findViewById(R.id.tabLayout);
 
+        adapter = new TabAdapter(getSupportFragmentManager());
+
+        adapter.addFragment(new Tab1Fragment(), "Tab 1");
+        adapter.addFragment(new Tab2Fragment(), "Tab 2");
+        adapter.addFragment(new Tab3Fragment(), "Tab 3");
+
+        viewPager.setAdapter(adapter);
+        tabLayout.setupWithViewPager(viewPager);
     }
 }

@@ -26,4 +26,10 @@
         <item name="android:windowFullscreen">true</item>
     </style>
 
+    <style name="MyToolbarTheme"
+        parent="@style/ThemeOverlay.AppCompat.Dark">
+        <item name="colorControlNormal">@color/colorWhite</item>
+        <item name="titleTextColor">@color/colorWhite</item>
+    </style>
+
 </resources>
