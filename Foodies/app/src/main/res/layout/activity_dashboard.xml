@@ -13,36 +13,64 @@
         android:layout_height="match_parent"
         android:orientation="vertical">
 
-    <include layout="@layout/app_bar_layout" />
+        <include layout="@layout/app_bar_layout" />
 
-    <com.google.android.material.tabs.TabLayout
-        android:id="@+id/tabLayout"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:tabBackground="@color/colorPrimary"
-        app:tabGravity="fill"
-        app:tabTextAppearance="@android:style/TextAppearance.Widget.TabWidget"
-        app:tabTextColor="@color/colorLightPrimary"
-        app:tabSelectedTextColor="@color/colorWhite"
-        app:tabIndicatorHeight="4dp"
-        app:tabIndicatorColor="@color/colorWhite"
-        app:tabMode="scrollable" />
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_search"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/dimen_10dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:clickable="true"
+            android:visibility="visible"
+            app:cardBackgroundColor="@color/colorAccentGray"
+            app:cardCornerRadius="@dimen/dimen_10dp"
+            app:cardElevation="2dp">
 
-    <androidx.viewpager.widget.ViewPager
-        android:id="@+id/viewPager"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+            <EditText
+                android:drawableLeft="@drawable/ic_search"
+                android:padding="5dp"
+                android:background="@null"
+                android:textSize="16dp"
+                android:maxLines="1"
+                android:drawablePadding="@dimen/dimen_20dp"
+                android:hint="What are you craving for?"
+                android:id="@+id/et_search"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+        </androidx.cardview.widget.CardView>
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tabLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="150dp"
+            app:tabBackground="@color/colorPrimary"
+            app:tabGravity="fill"
+            app:tabIndicatorColor="@color/colorWhite"
+            app:tabIndicatorHeight="4dp"
+            app:tabMode="scrollable"
+            app:tabSelectedTextColor="@color/colorWhite"
+            app:tabTextAppearance="@android:style/TextAppearance.Widget.TabWidget"
+            app:tabTextColor="@color/colorLightPrimary" />
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/viewPager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
 
     </LinearLayout>
 
-        <com.google.android.material.navigation.NavigationView
-            android:id="@+id/navigation_view"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:layout_gravity="start"
-            android:visibility="gone"
-            app:headerLayout="@layout/slidebar_header"
-            app:itemTextColor="#000"
-            app:menu="@menu/slidebar_item" />
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/navigation_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:visibility="gone"
+        app:headerLayout="@layout/slidebar_header"
+        app:itemTextColor="#000"
+        app:menu="@menu/slidebar_item" />
 
 </androidx.drawerlayout.widget.DrawerLayout>
