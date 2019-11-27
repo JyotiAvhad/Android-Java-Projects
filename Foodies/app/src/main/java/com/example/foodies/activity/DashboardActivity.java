@@ -9,20 +9,15 @@ import androidx.fragment.app.Fragment;
 import androidx.viewpager.widget.ViewPager;
 
 import com.example.foodies.R;
-import com.example.foodies.fragment.BeverageTabFragment;
-import com.example.foodies.fragment.BreakfastTabFragment;
 import com.example.foodies.fragment.DashboardFragment;
-import com.example.foodies.fragment.DessertsTabFragment;
 import com.example.foodies.fragment.FavoriteFragment;
 import com.example.foodies.fragment.RecipeFragment;
-import com.example.foodies.fragment.SandwitchTabFragment;
-import com.example.foodies.fragment.SoupsTabFragment;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.tabs.TabLayout;
 
 public class DashboardActivity extends AppCompatActivity {
 
-    TabAdapter adapter;
+    TabSelectorAdapter adapter;
     TabLayout tabLayout;
     ViewPager viewPager;
 
@@ -31,30 +26,30 @@ public class DashboardActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_dashboard);
 
-        viewPager = findViewById(R.id.viewPager);
-        tabLayout = findViewById(R.id.tabLayout);
-
-        adapter = new TabAdapter(getSupportFragmentManager());
-
-        adapter.addFragment(new BreakfastTabFragment(), "Breakfast");
-        adapter.addFragment(new SandwitchTabFragment(), "Sandwitch");
-        adapter.addFragment(new SoupsTabFragment(), "Soups");
-        adapter.addFragment(new DessertsTabFragment(), "Desserts");
-        adapter.addFragment(new BeverageTabFragment(), "Beverage");
-
-        viewPager.setAdapter(adapter);
-        tabLayout.setupWithViewPager(viewPager);
+//        viewPager = findViewById(R.id.viewPager);
+//        tabLayout = findViewById(R.id.tabLayout);
+//
+//        adapter = new TabSelectorAdapter(getSupportFragmentManager());
+//
+//        adapter.addFragment(new BreakfastTabFragment(), "Breakfast");
+//        adapter.addFragment(new SandwitchTabFragment(), "Sandwitch");
+//        adapter.addFragment(new SoupsTabFragment(), "Soups");
+//        adapter.addFragment(new DessertsTabFragment(), "Desserts");
+//        adapter.addFragment(new BeverageTabFragment(), "Beverage");
+//
+//        viewPager.setAdapter(adapter);
+//        tabLayout.setupWithViewPager(viewPager);
 
         BottomNavigationView bottomNavigationView = findViewById(R.id.bottom_navigation);
         bottomNavigationView.setOnNavigationItemSelectedListener(navigationItemSelectedListener);
 
         // loadFragment(new RecipeFragment());
 
-//        //I added this if statement to keep the selected fragment when rotating the device
-//        if (savedInstanceState == null) {
-//            getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
-//                    new RecipeFragment()).commit();
-//        }
+        //I added this if statement to keep the selected fragment when rotating the device
+        if (savedInstanceState == null) {
+            getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
+                    new DashboardFragment()).commit();
+        }
     }
 
 //    private boolean loadFragment(Fragment fragment){
@@ -95,6 +90,7 @@ public class DashboardActivity extends AppCompatActivity {
                             .beginTransaction()
                             .replace(R.id.fragment_container, selectedFragment)
                             .commit();
+
                     return true;
 //                    return loadFragment(selectedFragment);
                 }
