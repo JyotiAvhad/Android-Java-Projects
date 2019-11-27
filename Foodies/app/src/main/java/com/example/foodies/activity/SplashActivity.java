@@ -1,13 +1,13 @@
-package com.example.foodies;
+package com.example.foodies.activity;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
-import android.view.Window;
-import android.view.WindowManager;
+
+import com.example.foodies.R;
+import com.example.foodies.activity.LoginActivity;
 
 public class SplashActivity extends AppCompatActivity {
 
@@ -35,7 +35,7 @@ public class SplashActivity extends AppCompatActivity {
 
     private void createAccount() {
 
-        startActivity(new Intent(this,LoginActivity.class));
+        startActivity(new Intent(this, LoginActivity.class));
         finish();
     }
 }

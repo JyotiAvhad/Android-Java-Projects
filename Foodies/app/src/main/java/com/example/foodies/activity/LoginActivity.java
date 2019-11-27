@@ -1,4 +1,4 @@
-package com.example.foodies;
+package com.example.foodies.activity;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -9,6 +9,8 @@ import android.widget.EditText;
 import android.widget.ImageView;
 
 import androidx.appcompat.app.AppCompatActivity;
+
+import com.example.foodies.R;
 
 public class LoginActivity extends AppCompatActivity {
 
@@ -35,7 +37,7 @@ public class LoginActivity extends AppCompatActivity {
                     return;
                 }
 
-                Intent intent = new Intent(LoginActivity.this, VerifyPhoneNoActivity.class);
+                Intent intent = new Intent(LoginActivity.this, VerifyMobileActivity.class);
                 intent.putExtra("mobile", phoneNumber);
                 startActivity(intent);
             }

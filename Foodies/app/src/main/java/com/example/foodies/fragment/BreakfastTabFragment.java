@@ -1,4 +1,4 @@
-package com.example.foodies;
+package com.example.foodies.fragment;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -7,6 +7,8 @@ import android.view.ViewGroup;
 import android.widget.GridView;
 
 import androidx.fragment.app.Fragment;
+
+import com.example.foodies.R;
 
 import java.util.ArrayList;
 import java.util.Arrays;

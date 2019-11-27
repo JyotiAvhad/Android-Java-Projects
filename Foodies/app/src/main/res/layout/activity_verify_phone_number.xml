@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:onClick="hideKeyboard"
-    tools:context=".VerifyPhoneNoActivity">
+    tools:context=".activity.VerifyMobileActivity">
 
     <!--    <ImageView-->
     <!--        android:layout_width="match_parent"-->

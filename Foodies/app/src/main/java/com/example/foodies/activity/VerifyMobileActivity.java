@@ -1,4 +1,4 @@
-package com.example.foodies;
+package com.example.foodies.activity;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -12,6 +12,7 @@ import android.widget.Toast;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.example.foodies.R;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.android.gms.tasks.TaskExecutors;
@@ -24,9 +25,9 @@ import com.google.firebase.auth.PhoneAuthProvider;
 
 import java.util.concurrent.TimeUnit;
 
-public class VerifyPhoneNoActivity extends AppCompatActivity {
+public class VerifyMobileActivity extends AppCompatActivity {
 
-    private static final String TAG = "VerifyPhoneNoActivity";
+    private static final String TAG = "VerifyMobileActivity";
 
     private EditText et_verifyOTP;
     private String verificationId;
@@ -83,13 +84,13 @@ public class VerifyPhoneNoActivity extends AppCompatActivity {
         Log.d(TAG, "signInWithPhoneCredential: ");
 
         firebaseAuth.signInWithCredential(credential)
-                .addOnCompleteListener(VerifyPhoneNoActivity.this, new OnCompleteListener<AuthResult>() {
+                .addOnCompleteListener(VerifyMobileActivity.this, new OnCompleteListener<AuthResult>() {
                     @Override
                     public void onComplete(@NonNull Task<AuthResult> task) {
 
                         if (task.isSuccessful()) {
                             //verification successful we will start the profile activity
-                            Intent intent = new Intent(VerifyPhoneNoActivity.this, DashboardActivity.class);
+                            Intent intent = new Intent(VerifyMobileActivity.this, DashboardActivity.class);
                             intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
                             startActivity(intent);
 
@@ -148,7 +149,7 @@ public class VerifyPhoneNoActivity extends AppCompatActivity {
 
         @Override
         public void onVerificationFailed(FirebaseException e) {
-            Toast.makeText(VerifyPhoneNoActivity.this, e.getMessage(), Toast.LENGTH_LONG).show();
+            Toast.makeText(VerifyMobileActivity.this, e.getMessage(), Toast.LENGTH_LONG).show();
         }
 
         @Override

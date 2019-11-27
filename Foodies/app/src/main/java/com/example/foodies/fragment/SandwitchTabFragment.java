@@ -1,4 +1,4 @@
-package com.example.foodies;
+package com.example.foodies.fragment;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -7,9 +7,11 @@ import android.view.ViewGroup;
 
 import androidx.fragment.app.Fragment;
 
-public class SoupsTabFragment extends Fragment {
+import com.example.foodies.R;
+
+public class SandwitchTabFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.fragment_three, container, false);
+        return inflater.inflate(R.layout.fragment_two, container, false);
     }
 }

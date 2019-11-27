@@ -12,16 +12,16 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
 
-        <activity android:name=".VerifyPhoneNoActivity"
+        <activity android:name=".activity.VerifyMobileActivity"
             android:screenOrientation="portrait"/>
 
-        <activity android:name=".LoginActivity"
+        <activity android:name=".activity.LoginActivity"
             android:screenOrientation="portrait"/>
 
-        <activity android:name=".DashboardActivity"
+        <activity android:name=".activity.DashboardActivity"
             android:screenOrientation="portrait"/>
 
-        <activity android:name=".SplashActivity"
+        <activity android:name=".activity.SplashActivity"
             android:label="@string/app_name"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreen">
             <intent-filter>
