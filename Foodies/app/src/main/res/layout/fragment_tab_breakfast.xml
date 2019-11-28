@@ -3,16 +3,11 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <GridView
-        android:layout_marginTop="5dp"
-        android:numColumns="3"
-        android:columnWidth="90dp"
-        android:horizontalSpacing="5dp"
-        android:verticalSpacing="5dp"
-        android:gravity="center"
-        android:id="@+id/myGrids"
-        android:stretchMode="columnWidth"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"/>
+   <androidx.recyclerview.widget.RecyclerView
+       android:id="@+id/recyclerView_itemName"
+       android:scrollbars="vertical"
+       android:layout_margin="3dp"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"/>
 
 </RelativeLayout>

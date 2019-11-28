@@ -9,9 +9,10 @@ import androidx.fragment.app.Fragment;
 import androidx.viewpager.widget.ViewPager;
 
 import com.example.foodies.R;
-import com.example.foodies.fragment.DashboardFragment;
-import com.example.foodies.fragment.FavoriteFragment;
-import com.example.foodies.fragment.RecipeFragment;
+import com.example.foodies.adapter.TabSelectorAdapter;
+import com.example.foodies.bottomfragment.DashboardFragment;
+import com.example.foodies.bottomfragment.FavoriteFragment;
+import com.example.foodies.bottomfragment.RecipeFragment;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.tabs.TabLayout;
 

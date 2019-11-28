@@ -1,4 +1,4 @@
-package com.example.foodies.fragment;
+package com.example.foodies.bottomfragment;
 
 
 import android.os.Bundle;
@@ -11,7 +11,12 @@ import androidx.fragment.app.Fragment;
 import androidx.viewpager.widget.ViewPager;
 
 import com.example.foodies.R;
-import com.example.foodies.activity.TabSelectorAdapter;
+import com.example.foodies.adapter.TabSelectorAdapter;
+import com.example.foodies.tabfragment.BeverageTabFragment;
+import com.example.foodies.tabfragment.BreakfastTabFragment;
+import com.example.foodies.tabfragment.DessertsTabFragment;
+import com.example.foodies.tabfragment.SandwitchTabFragment;
+import com.example.foodies.tabfragment.SoupsTabFragment;
 import com.google.android.material.tabs.TabLayout;
 
 public class DashboardFragment extends Fragment {

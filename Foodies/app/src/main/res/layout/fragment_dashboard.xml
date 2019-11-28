@@ -15,34 +15,34 @@
 
         <include layout="@layout/app_bar_layout" />
 
-<!--        <androidx.cardview.widget.CardView-->
-<!--            android:id="@+id/card_search"-->
-<!--            android:layout_width="match_parent"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:layout_gravity="center"-->
-<!--            android:layout_margin="@dimen/dimen_10dp"-->
-<!--            android:background="?attr/selectableItemBackgroundBorderless"-->
-<!--            android:clickable="true"-->
-<!--            android:visibility="visible"-->
-<!--            app:cardBackgroundColor="@color/colorAccentGray"-->
-<!--            app:cardCornerRadius="@dimen/dimen_10dp"-->
-<!--            app:cardElevation="2dp">-->
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/card_search"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="@dimen/dimen_10dp"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:clickable="true"
+                    android:visibility="visible"
+                    app:cardBackgroundColor="@color/colorAccentGray"
+                    app:cardCornerRadius="@dimen/dimen_10dp"
+                    app:cardElevation="2dp">
 
-<!--            <EditText-->
-<!--                android:id="@+id/et_search"-->
-<!--                android:layout_width="match_parent"-->
-<!--                android:layout_height="match_parent"-->
-<!--                android:background="@null"-->
-<!--                android:drawableLeft="@drawable/ic_search"-->
-<!--                android:drawablePadding="@dimen/dimen_20dp"-->
-<!--                android:hint="What are you craving for?"-->
-<!--                android:maxLines="1"-->
-<!--                android:padding="5dp"-->
-<!--                android:textSize="16dp" />-->
+                    <EditText
+                        android:id="@+id/et_search"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@null"
+                        android:drawableLeft="@drawable/ic_search"
+                        android:drawablePadding="@dimen/dimen_20dp"
+                        android:hint="What are you craving for?"
+                        android:maxLines="1"
+                        android:padding="5dp"
+                        android:textSize="16dp" />
 
-<!--        </androidx.cardview.widget.CardView>-->
+                </androidx.cardview.widget.CardView>
 
-<!--&lt;!&ndash;        <include layout="@layout/image_slider_viewpager_layout" />&ndash;&gt;-->
+        <!--&lt;!&ndash;        <include layout="@layout/image_slider_viewpager_layout" />&ndash;&gt;-->
 
         <com.google.android.material.tabs.TabLayout
             android:id="@+id/tabLayout"

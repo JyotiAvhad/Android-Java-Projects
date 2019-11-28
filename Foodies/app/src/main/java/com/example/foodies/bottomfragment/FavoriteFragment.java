@@ -1,6 +1,4 @@
-package com.example.foodies.fragment;
-
-
+package com.example.foodies.bottomfragment;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -12,11 +10,11 @@ import androidx.fragment.app.Fragment;
 
 import com.example.foodies.R;
 
-public class RecipeFragment extends Fragment {
+public class FavoriteFragment extends Fragment {
 
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.fragment_recipe,null);
+        return inflater.inflate(R.layout.fragment_favorite,container,false);
     }
 }
