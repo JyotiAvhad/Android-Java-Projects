@@ -3,7 +3,7 @@ package com.example.foodies.pojo;
 public class BreakfastItem {
 
     private String itemName;
-    private int image ;
+    private int image;
 
     public BreakfastItem(String name, int img) {
         itemName = name;

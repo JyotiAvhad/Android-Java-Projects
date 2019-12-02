@@ -59,10 +59,11 @@ public class BreakfastTabFragment extends Fragment {
         lstBreakfastItem.add(new BreakfastItem("Idli",R.drawable.idli));
         lstBreakfastItem.add(new BreakfastItem("Gobi Paratha",R.drawable.gobi_paratha));
 
-        RecyclerView myrv = myFragment.findViewById(R.id.recyclerView_itemName);
+        RecyclerView recyclerView = myFragment.findViewById(R.id.recyclerView_itemName);
+
         BreakfastRecyclerViewAdapter myAdapter = new BreakfastRecyclerViewAdapter(this, lstBreakfastItem);
-        myrv.setLayoutManager(new GridLayoutManager(getActivity(),2));
-        myrv.setAdapter(myAdapter);
+        recyclerView.setLayoutManager(new GridLayoutManager(getActivity(),2));
+        recyclerView.setAdapter(myAdapter);
 
         return myFragment;
 

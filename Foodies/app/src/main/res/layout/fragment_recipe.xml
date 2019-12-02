@@ -1,10 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto">
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp">
 
     <androidx.cardview.widget.CardView
+        android:id="@+id/cardview_imgSlider"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
@@ -12,31 +15,53 @@
         app:cardCornerRadius="8dp">
 
         <com.smarteist.autoimageslider.SliderView
+            android:id="@+id/imageSlider"
             android:layout_width="match_parent"
             android:layout_height="200dp"
-            android:id="@+id/imageSlider"
-            android:layout_alignParentTop="true"/>
+            android:layout_alignParentTop="true" />
 
-<!--        <com.smarteist.autoimageslider.SliderView-->
-<!--            android:id="@+id/imageSlider"-->
-<!--            android:layout_width="match_parent"-->
-<!--            android:layout_height="200dp"-->
-<!--            app:sliderAnimationDuration="600"-->
-<!--            app:sliderAutoCycleDirection="back_and_forth"-->
-<!--            app:sliderAutoCycleEnabled="true"-->
-<!--            app:sliderCircularHandlerEnabled="true"-->
-<!--            app:sliderIndicatorAnimationDuration="600"-->
-<!--            app:sliderIndicatorGravity="center_horizontal|bottom"-->
-<!--            app:sliderIndicatorMargin="15dp"-->
-<!--            app:sliderIndicatorOrientation="horizontal"-->
-<!--            app:sliderIndicatorPadding="3dp"-->
-<!--            app:sliderIndicatorRadius="2dp"-->
-<!--            app:sliderIndicatorSelectedColor="#5A5A5A"-->
-<!--            app:sliderIndicatorUnselectedColor="#FFF"-->
-<!--            app:sliderScrollTimeInSec="1"-->
-<!--            app:sliderStartAutoCycle="true" />-->
+        <!--        <com.smarteist.autoimageslider.SliderView-->
+        <!--            android:id="@+id/imageSlider"-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="200dp"-->
+        <!--            app:sliderAnimationDuration="600"-->
+        <!--            app:sliderAutoCycleDirection="back_and_forth"-->
+        <!--            app:sliderAutoCycleEnabled="true"-->
+        <!--            app:sliderCircularHandlerEnabled="true"-->
+        <!--            app:sliderIndicatorAnimationDuration="600"-->
+        <!--            app:sliderIndicatorGravity="center_horizontal|bottom"-->
+        <!--            app:sliderIndicatorMargin="15dp"-->
+        <!--            app:sliderIndicatorOrientation="horizontal"-->
+        <!--            app:sliderIndicatorPadding="3dp"-->
+        <!--            app:sliderIndicatorRadius="2dp"-->
+        <!--            app:sliderIndicatorSelectedColor="#5A5A5A"-->
+        <!--            app:sliderIndicatorUnselectedColor="#FFF"-->
+        <!--            app:sliderScrollTimeInSec="1"-->
+        <!--            app:sliderStartAutoCycle="true" />-->
 
 
     </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/textView_topCuisines"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cardview_imgSlider"
+        android:text="TOP CUISINES"
+        android:textSize="18dp"
+        android:layout_margin="8dp"
+        android:textStyle="bold" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView_topCuisines"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:orientation="horizontal">
+
+    </androidx.recyclerview.widget.RecyclerView>
 
 </RelativeLayout>
