@@ -1,4 +1,4 @@
-package com.example.foodies.tabfragment;
+package com.example.foodies.Controller.tabfragment;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;

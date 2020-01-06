@@ -1,4 +1,4 @@
-package com.example.foodies.activity;
+package com.example.foodies.Controller;
 
 import android.app.Activity;
 import android.content.Intent;

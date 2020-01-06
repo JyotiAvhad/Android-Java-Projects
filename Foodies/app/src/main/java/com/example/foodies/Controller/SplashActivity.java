@@ -1,4 +1,4 @@
-package com.example.foodies.activity;
+package com.example.foodies.Controller;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -7,7 +7,6 @@ import android.os.Bundle;
 import android.os.Handler;
 
 import com.example.foodies.R;
-import com.example.foodies.activity.LoginActivity;
 
 public class SplashActivity extends AppCompatActivity {
 

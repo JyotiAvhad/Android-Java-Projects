@@ -1,4 +1,4 @@
-package com.example.foodies.pojo;
+package com.example.foodies.Model;
 
 public class BreakfastItem {
 

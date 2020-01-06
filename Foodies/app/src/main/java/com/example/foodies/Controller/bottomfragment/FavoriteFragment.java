@@ -1,4 +1,4 @@
-package com.example.foodies.bottomfragment;
+package com.example.foodies.Controller.bottomfragment;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;

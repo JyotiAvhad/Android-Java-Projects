@@ -1,4 +1,4 @@
-package com.example.foodies.adapter;
+package com.example.foodies.Controller.adapter;
 
 import android.view.LayoutInflater;
 import android.view.View;
@@ -10,8 +10,8 @@ import androidx.cardview.widget.CardView;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.foodies.R;
-import com.example.foodies.pojo.BreakfastItem;
-import com.example.foodies.tabfragment.BreakfastTabFragment;
+import com.example.foodies.Model.BreakfastItem;
+import com.example.foodies.Controller.tabfragment.BreakfastTabFragment;
 
 import java.util.List;
 

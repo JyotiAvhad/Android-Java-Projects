@@ -1,18 +1,16 @@
-package com.example.foodies.adapter;
+package com.example.foodies.Controller.adapter;
 
-import android.content.Context;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.bumptech.glide.Glide;
 import com.example.foodies.R;
-import com.example.foodies.bottomfragment.RecipeFragment;
+import com.example.foodies.Controller.bottomfragment.RecipeFragment;
 
 import java.util.ArrayList;
 
