@@ -1,4 +1,4 @@
-package com.example.foodies.Controller.adapter;
+package com.example.foodies.Adapter;
 
 import android.view.LayoutInflater;
 import android.view.View;

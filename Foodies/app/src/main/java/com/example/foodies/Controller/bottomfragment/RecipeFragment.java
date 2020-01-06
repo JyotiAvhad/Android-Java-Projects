@@ -13,8 +13,8 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.foodies.R;
-import com.example.foodies.Controller.adapter.ImageSliderAdapter;
-import com.example.foodies.Controller.adapter.ImageSliderHorRecyclerViewAdapter;
+import com.example.foodies.Adapter.ImageSliderAdapter;
+import com.example.foodies.Adapter.ImageSliderHorRecyclerViewAdapter;
 import com.smarteist.autoimageslider.IndicatorAnimations;
 import com.smarteist.autoimageslider.SliderAnimations;
 import com.smarteist.autoimageslider.SliderView;

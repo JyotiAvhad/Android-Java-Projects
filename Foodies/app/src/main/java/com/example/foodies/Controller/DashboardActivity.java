@@ -9,7 +9,7 @@ import androidx.fragment.app.Fragment;
 import androidx.viewpager.widget.ViewPager;
 
 import com.example.foodies.R;
-import com.example.foodies.Controller.adapter.TabSelectorAdapter;
+import com.example.foodies.Adapter.TabSelectorAdapter;
 import com.example.foodies.Controller.bottomfragment.DashboardFragment;
 import com.example.foodies.Controller.bottomfragment.FavoriteFragment;
 import com.example.foodies.Controller.bottomfragment.RecipeFragment;

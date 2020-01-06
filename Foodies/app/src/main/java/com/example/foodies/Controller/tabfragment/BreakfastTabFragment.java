@@ -11,7 +11,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.foodies.Model.BreakfastItem;
 import com.example.foodies.R;
-import com.example.foodies.Controller.adapter.BreakfastRecyclerViewAdapter;
+import com.example.foodies.Adapter.BreakfastRecyclerViewAdapter;
 
 import java.util.ArrayList;
 import java.util.List;

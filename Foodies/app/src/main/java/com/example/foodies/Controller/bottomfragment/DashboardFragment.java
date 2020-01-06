@@ -11,7 +11,7 @@ import androidx.fragment.app.Fragment;
 import androidx.viewpager.widget.ViewPager;
 
 import com.example.foodies.R;
-import com.example.foodies.Controller.adapter.TabSelectorAdapter;
+import com.example.foodies.Adapter.TabSelectorAdapter;
 import com.example.foodies.Controller.tabfragment.BeverageTabFragment;
 import com.example.foodies.Controller.tabfragment.BreakfastTabFragment;
 import com.example.foodies.Controller.tabfragment.DessertsTabFragment;
