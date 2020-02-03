@@ -1,4 +1,4 @@
-package com.example.foodies.Model;
+package com.example.foodies;
 
 public class CuisinesRecipeItem {
 

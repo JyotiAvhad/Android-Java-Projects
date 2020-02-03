@@ -1,4 +1,4 @@
-package com.example.foodies.Adapter;
+package com.example.foodies;
 
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;

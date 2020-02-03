@@ -1,4 +1,4 @@
-package com.example.foodies.Controller.activity;
+package com.example.foodies;
 
 import android.os.Bundle;
 import android.view.MenuItem;
@@ -8,11 +8,6 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 import androidx.viewpager.widget.ViewPager;
 
-import com.example.foodies.R;
-import com.example.foodies.Adapter.TabSelectorAdapter;
-import com.example.foodies.Controller.bottomfragment.DashboardFragment;
-import com.example.foodies.Controller.bottomfragment.FavoriteFragment;
-import com.example.foodies.Controller.bottomfragment.RecipeFragment;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.tabs.TabLayout;
 

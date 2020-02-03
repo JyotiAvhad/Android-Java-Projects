@@ -1,4 +1,4 @@
-package com.example.foodies.Controller.tabfragment;
+package com.example.foodies;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -8,10 +8,6 @@ import android.view.ViewGroup;
 import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
-
-import com.example.foodies.Model.BreakfastItem;
-import com.example.foodies.R;
-import com.example.foodies.Adapter.BreakfastRecyclerViewAdapter;
 
 import java.util.ArrayList;
 import java.util.List;

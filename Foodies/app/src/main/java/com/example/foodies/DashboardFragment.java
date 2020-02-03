@@ -1,4 +1,4 @@
-package com.example.foodies.Controller.bottomfragment;
+package com.example.foodies;
 
 
 import android.os.Bundle;
@@ -10,13 +10,6 @@ import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import androidx.viewpager.widget.ViewPager;
 
-import com.example.foodies.R;
-import com.example.foodies.Adapter.TabSelectorAdapter;
-import com.example.foodies.Controller.tabfragment.BeverageTabFragment;
-import com.example.foodies.Controller.tabfragment.BreakfastTabFragment;
-import com.example.foodies.Controller.tabfragment.DessertsTabFragment;
-import com.example.foodies.Controller.tabfragment.SandwitchTabFragment;
-import com.example.foodies.Controller.tabfragment.SoupsTabFragment;
 import com.google.android.material.tabs.TabLayout;
 
 public class DashboardFragment extends Fragment {

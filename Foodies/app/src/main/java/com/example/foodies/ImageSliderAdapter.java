@@ -1,4 +1,4 @@
-package com.example.foodies.Adapter;
+package com.example.foodies;
 
 import android.view.LayoutInflater;
 import android.view.View;
@@ -7,8 +7,6 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.bumptech.glide.Glide;
-import com.example.foodies.R;
-import com.example.foodies.Controller.bottomfragment.RecipeFragment;
 import com.smarteist.autoimageslider.SliderViewAdapter;
 
 public class ImageSliderAdapter extends SliderViewAdapter<ImageSliderAdapter.SliderAdapterVH> {

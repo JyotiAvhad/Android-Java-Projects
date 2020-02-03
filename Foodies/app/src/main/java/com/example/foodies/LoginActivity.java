@@ -1,4 +1,4 @@
-package com.example.foodies.Controller.activity;
+package com.example.foodies;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -9,8 +9,6 @@ import android.widget.EditText;
 import android.widget.ImageView;
 
 import androidx.appcompat.app.AppCompatActivity;
-
-import com.example.foodies.R;
 
 public class LoginActivity extends AppCompatActivity {
 

@@ -1,4 +1,4 @@
-package com.example.foodies.Controller.bottomfragment;
+package com.example.foodies;
 
 
 import android.graphics.Color;
@@ -13,8 +13,8 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.foodies.R;
-import com.example.foodies.Adapter.ImageSliderAdapter;
-import com.example.foodies.Adapter.ImageSliderHorRecyclerViewAdapter;
+import com.example.foodies.ImageSliderAdapter;
+import com.example.foodies.ImageSliderHorRecyclerViewAdapter;
 import com.smarteist.autoimageslider.IndicatorAnimations;
 import com.smarteist.autoimageslider.SliderAnimations;
 import com.smarteist.autoimageslider.SliderView;
