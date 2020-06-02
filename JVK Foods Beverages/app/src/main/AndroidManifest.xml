@@ -12,15 +12,16 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".SubTabActivity"></activity>
-        <activity android:name=".EcShowAllActivity" />
-        <activity android:name=".DashboardActivity" />
-        <activity android:name=".CurrentLocationActivity" />
 
         <meta-data
             android:name="com.google.android.geo.API_KEY"
             android:value="@string/google_maps_key" />
 
+        <activity android:name=".DetailCategoriesGridItemActivity"></activity>
+        <activity android:name=".SubTabActivity" />
+        <activity android:name=".ExploreCategoriesListActivity" />
+        <activity android:name=".DashboardActivity" />
+        <activity android:name=".CurrentLocationActivity" />
         <activity android:name=".MapsActivity" />
         <activity android:name=".OTPActivity" />
         <activity android:name=".PhoneNumberActivity" />

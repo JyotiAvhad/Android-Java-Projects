@@ -20,6 +20,8 @@
     <color name="lightGreen">#2AC769</color>
 
     <color name="white">#FFFFFFFF</color>
+    <color name="accentWhite">#F6F6F6</color>
+    <color name="lightWhiteBG">#F8F8F8</color>
     <color name="lightWhite">#F6F5F5</color>
     <color name="lightGray">#E8E8E8</color>
     <color name="gray">#CACCCF</color>

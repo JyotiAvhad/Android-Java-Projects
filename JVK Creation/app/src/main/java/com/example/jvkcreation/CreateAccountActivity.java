@@ -24,7 +24,7 @@ public class CreateAccountActivity extends AppCompatActivity {
             public void onClick(View v) {
 
                 startActivity(new Intent(CreateAccountActivity.this,MainActivity.class));
-                finish();
+//                finish();
             }
         });
 
@@ -34,7 +34,7 @@ public class CreateAccountActivity extends AppCompatActivity {
             public void onClick(View v) {
 
                 startActivity(new Intent(CreateAccountActivity.this,PurchaseAsActivity.class));
-                finish();
+//                finish();
             }
         });
     }

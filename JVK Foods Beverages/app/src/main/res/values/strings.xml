@@ -1,8 +1,12 @@
 <resources>
-    <string name="app_name">JVK Foods &amp; Beverages</string>
+    <string name="app_name">Foods &amp; Beverages</string>
 
     <string name="next">Next</string>
     <string name="start">Get Started</string>
     <string name="title_activity_maps">Map</string>
+
+
+    <string name="card_filter">Freeship within 5km: Enter code Freeship</string>
+    <string name="card_offer">30% off on all menu items</string>
 
 </resources>

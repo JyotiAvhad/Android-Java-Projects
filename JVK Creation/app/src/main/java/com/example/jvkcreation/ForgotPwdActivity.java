@@ -24,7 +24,7 @@ public class ForgotPwdActivity extends AppCompatActivity {
             public void onClick(View v) {
 
                 startActivity(new Intent(ForgotPwdActivity.this,LoginActivity.class));
-                finish();
+//                finish();
             }
         });
 
@@ -34,7 +34,7 @@ public class ForgotPwdActivity extends AppCompatActivity {
             public void onClick(View v) {
 
                 startActivity(new Intent(ForgotPwdActivity.this,UpdatePwdActivity.class));
-                finish();
+//                finish();
             }
         });
     }

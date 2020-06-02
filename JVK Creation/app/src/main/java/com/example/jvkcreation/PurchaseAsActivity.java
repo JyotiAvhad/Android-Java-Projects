@@ -24,7 +24,7 @@ public class PurchaseAsActivity extends AppCompatActivity {
             public void onClick(View v) {
 
                 startActivity(new Intent(PurchaseAsActivity.this,CreateAccountActivity.class));
-                finish();
+//                finish();
             }
         });
 
@@ -34,7 +34,7 @@ public class PurchaseAsActivity extends AppCompatActivity {
             public void onClick(View v) {
 
                 startActivity(new Intent(PurchaseAsActivity.this,WomenShopNowActivity.class));
-                finish();
+//                finish();
             }
         });
     }

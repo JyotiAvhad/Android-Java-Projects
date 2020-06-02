@@ -11,22 +11,22 @@ import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-public class FeaturedFragment extends Fragment {
+public class DeliveryFragment extends Fragment {
+
 
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
 
-        View view = inflater.inflate(R.layout.featured_fragment, container, false);
+        View view=inflater.inflate(R.layout.delivery_fragment,container,false);
 
-        RecyclerView recyclerView = view.findViewById(R.id.recyclerView_featured);
+        RecyclerView recyclerView = view.findViewById(R.id.recyclerView_delivery);
 
-        FeaturedFragmentAdapter featuredFragmentAdapter = new FeaturedFragmentAdapter();
-        recyclerView.setAdapter(featuredFragmentAdapter);
+        DeliveryFragmentAdapter deliveryFragmentAdapter = new DeliveryFragmentAdapter();
+        recyclerView.setAdapter(deliveryFragmentAdapter);
         RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(getActivity());
         recyclerView.setLayoutManager(layoutManager);
 
         return view;
     }
-
 }

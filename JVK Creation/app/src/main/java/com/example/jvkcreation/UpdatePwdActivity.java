@@ -24,7 +24,7 @@ public class UpdatePwdActivity extends AppCompatActivity {
             public void onClick(View v) {
 
                 startActivity(new Intent(UpdatePwdActivity.this,ForgotPwdActivity.class));
-                finish();
+//                finish();
             }
         });
 
@@ -34,7 +34,7 @@ public class UpdatePwdActivity extends AppCompatActivity {
             public void onClick(View v) {
 
                 startActivity(new Intent(UpdatePwdActivity.this,ResetPwdActivity.class));
-                finish();
+//                finish();
             }
         });
     }
