@@ -1,6 +1,7 @@
 package com.example.jvkfoodsbeverages;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.cardview.widget.CardView;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 import androidx.viewpager.widget.ViewPager;
@@ -8,6 +9,7 @@ import androidx.viewpager.widget.ViewPager;
 import android.graphics.Color;
 import android.os.Build;
 import android.os.Bundle;
+import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
 
@@ -46,6 +48,7 @@ public class DetailCategoriesGridItemActivity extends AppCompatActivity {
 
         TabLayout tabLayout = findViewById(R.id.grid_tabs);
         tabLayout.setupWithViewPager(viewPager);
+
 
 //      detail page daily deals section
         rvDetailDailyDeals = findViewById(R.id.recyclerView_daily_deal);

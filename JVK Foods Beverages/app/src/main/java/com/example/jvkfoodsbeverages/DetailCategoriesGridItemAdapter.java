@@ -1,15 +1,26 @@
 package com.example.jvkfoodsbeverages;
 
 import android.content.Context;
+import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.RatingBar;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.cardview.widget.CardView;
+import androidx.fragment.app.FragmentActivity;
+import androidx.fragment.app.FragmentManager;
 import androidx.recyclerview.widget.RecyclerView;
+
+import com.google.android.material.bottomsheet.BottomSheetBehavior;
+import com.google.android.material.bottomsheet.BottomSheetDialog;
+import com.google.android.material.bottomsheet.BottomSheetDialogFragment;
 
 import java.util.ArrayList;
 
@@ -40,10 +51,19 @@ public class DetailCategoriesGridItemAdapter extends RecyclerView.Adapter<Detail
 
         holder.title.setText(detailCategoriesGridItemModels.get(position).getTitle());
         holder.subTitle.setText(detailCategoriesGridItemModels.get(position).getSubTitle());
-//        holder.f_img.setImageResource(detailCategoriesGridItemModels.get(position).getFoodImg());
-//        holder.f_rating.setRating(popularNearYouModelArrayList.get(position).getFoodRating());
+        holder.cv_addToCart.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
 
-//        holder.f_rating.setRating(Float.parseFloat("4.0"));
+                Context context = v.getContext();
+
+                //Initializing a bottom sheet
+                AddToCartBottomSheetDialog bottomSheetDialogFragment = new AddToCartBottomSheetDialog();
+                //show it
+                bottomSheetDialogFragment.show(((FragmentActivity) context).getSupportFragmentManager(), bottomSheetDialogFragment.getTag());
+
+            }
+        });
 
     }
 
@@ -57,17 +77,14 @@ public class DetailCategoriesGridItemAdapter extends RecyclerView.Adapter<Detail
 
         TextView title;
         TextView subTitle;
-        ImageView f_img;
-        RatingBar f_rating;
+        CardView cv_addToCart;
 
         public MyViewHolder(@NonNull View itemView) {
             super(itemView);
 
             title = itemView.findViewById(R.id.tv_grid_title);
             subTitle = itemView.findViewById(R.id.tv_grid_sub_title);
-//            f_type = itemView.findViewById(R.id.tv_grid_price);
-//            f_img = itemView.findViewById(R.id.iv_food);
-//            f_rating = itemView.findViewById(R.id.ratingBar);
+            cv_addToCart = itemView.findViewById(R.id.cardView_addToCart);
 
         }
     }

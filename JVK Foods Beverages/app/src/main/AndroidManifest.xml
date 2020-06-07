@@ -12,12 +12,14 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".ProfileActivity"></activity>
 
         <meta-data
             android:name="com.google.android.geo.API_KEY"
             android:value="@string/google_maps_key" />
 
-        <activity android:name=".DetailCategoriesGridItemActivity"></activity>
+        <activity android:name=".AddToCartBottomSheetDialog" />
+        <activity android:name=".DetailCategoriesGridItemActivity" />
         <activity android:name=".SubTabActivity" />
         <activity android:name=".ExploreCategoriesListActivity" />
         <activity android:name=".DashboardActivity" />
