@@ -11,6 +11,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import java.util.ArrayList;
@@ -147,6 +148,17 @@ public class DashboardActivity extends AppCompatActivity {
             public void onClick(View v) {
 
                 startActivity(new Intent(DashboardActivity.this,SubTabActivity.class));
+//                finish();
+            }
+        });
+
+        //on click categories grid view
+        ImageView profile=findViewById(R.id.iv_profile);
+        profile.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                startActivity(new Intent(DashboardActivity.this,ProfileActivity.class));
 //                finish();
             }
         });
