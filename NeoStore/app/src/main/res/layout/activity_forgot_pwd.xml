@@ -1,80 +1,61 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colorPrimary"
-    tools:context=".ForgetPwdActivity">
+    android:background="@color/colorPrimary">
 
-    <RelativeLayout
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        android:text="@string/app_name"
+        android:textColor="@color/white"
+        android:textSize="60dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/etUsername"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_marginLeft="20dp"
-        android:layout_marginRight="20dp">
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="100px"
+        android:layout_marginTop="100dp"
+        android:background="@drawable/inputloginbox"
+        android:drawableLeft="@drawable/user_foreground"
+        android:drawablePadding="10dp"
+        android:hint="Username"
+        android:padding="8dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:textSize="22sp"
+        android:maxLength="12"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvTitle" />
 
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_marginLeft="20dp"
-            android:layout_marginRight="20dp">
+    <Button
+        android:id="@+id/btnLogin"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="100px"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/button_login"
+        android:backgroundTint="@color/white"
+        android:padding="10dp"
+        android:text="LOGIN"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etUsername" />
 
-            <LinearLayout
-                android:layout_marginTop="60dp"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical">
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="100dp"
-                    android:gravity="center"
-                    android:text="NeoSTORE"
-                    android:textColor="@color/colorWhite"
-                    android:textSize="40dp" />
-
-                <EditText
-                    android:id="@+id/et_forgot_email"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="20dp"
-                    android:background="@drawable/input_login"
-                    android:drawableLeft="@drawable/username_icon"
-                    android:drawablePadding="10dp"
-                    android:hint="Username"
-                    android:padding="10dp"
-                    android:textColor="@color/colorWhite"
-                    android:textColorHint="@color/colorWhite" />
-
-<!--                <EditText-->
-<!--                    android:id="@+id/et_forgot_pwd"-->
-<!--                    android:layout_width="match_parent"-->
-<!--                    android:layout_height="wrap_content"-->
-<!--                    android:layout_marginTop="20dp"-->
-<!--                    android:background="@drawable/input_login"-->
-<!--                    android:drawableLeft="@drawable/password_icon"-->
-<!--                    android:drawablePadding="10dp"-->
-<!--                    android:hint="Password"-->
-<!--                    android:padding="10dp"-->
-<!--                    android:textColor="@color/colorWhite"-->
-<!--                    android:textColorHint="@color/colorWhite" />-->
-
-                <Button
-                    android:id="@+id/btn_forget_pwd_login"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="30dp"
-                    android:background="@drawable/button_login"
-                    android:hint="LOGIN"
-                    android:textColorHint="@color/colorPrimary"
-                    android:textSize="22dp"
-                    android:textStyle="bold" />
-
-
-            </LinearLayout>
-
-        </RelativeLayout>
-
-    </RelativeLayout>
-
-</RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
