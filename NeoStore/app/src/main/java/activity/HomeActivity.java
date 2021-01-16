@@ -68,23 +68,23 @@ public class HomeActivity extends AppCompatActivity implements View.OnClickListe
 //                        Intent cart = new Intent(getApplicationContext(), ActivityCart.class);
 //                        startActivity(cart);
 //                        break;
-//
-//                    case R.id.Tables:
-//                        furniture("1");
-//                        break;
-//
-//                    case R.id.Chairs:
-//                        furniture("2");
-//                        break;
-//
-//                    case R.id.Sofas:
-//                        furniture("3");
-//                        break;
-//
-//                    case R.id.Cupboard:
-//                        furniture("4");
-//                        break;
-//
+
+                    case R.id.Tables:
+                        furnitureList("1");
+                        break;
+
+                    case R.id.Chairs:
+                        furnitureList("2");
+                        break;
+
+                    case R.id.Sofas:
+                        furnitureList("3");
+                        break;
+
+                    case R.id.Cupboard:
+                        furnitureList("4");
+                        break;
+
 //                    case R.id.logout:
 //                        HelperShared.Helper.getInstance(context).clear();
 //                        Intent logout = new Intent(getApplicationContext(), ActivityLogin.class);
@@ -97,6 +97,12 @@ public class HomeActivity extends AppCompatActivity implements View.OnClickListe
         });
     }
 
+    private void furnitureList(String s) {
+
+        Intent intent = new Intent(this, ProductTableActivity.class);
+        intent.putExtra("id", s);
+        startActivity(intent);
+    }
 
     @Override
     public void onClick(View view) {
